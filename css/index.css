@@ -1,0 +1,375 @@
+/* @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"); */
+@import url('./footer.css');
+@import url('./nav.css');
+
+body{
+  overflow-x: hidden;
+}
+.header{
+  background: url(../img/index-banner-dec.png),url("../img/index-banner.png");
+  background-repeat: no-repeat;
+  background-size: 50%,cover;
+  background-position: 100% 120%,100% 100%;
+}
+.header, .banner .txt{
+  width: 100%;
+  height: 155vh;
+}
+
+
+
+
+.banner .txt{
+  height: 100vh;
+  position:absolute;
+  top: 0;
+  background:linear-gradient(to bottom,rgba(0,0,0,.5),rgba(0,0,0,0));
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  text-align: center;
+}
+.banner .txt h1:nth-child(2){
+  font-size: 0.9em;
+}
+/* .banner .txt h1:last-child{
+  font-size: 0.5em !important;
+} */
+.con .wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
+.con .wrapitem{
+  margin: auto;
+  width: 85%;
+  display:flex;
+  justify-content: center;
+}
+
+.con .item{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  position: relative;
+  padding: 20px 5%;
+  margin: 3em 0 8em;
+}
+.con a {
+  color: white;
+}
+.shop .sidtt,.lesson .sidtt,.about .sidtt{
+  position: absolute;
+  z-index: 2;
+  top: 8em;
+  left:0;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+}
+.con .lesson img{
+  border-radius: 5px;
+}
+/*lesson頭皮屑*/
+.con .lesson{
+  background-image: url(../img/index-lesson-dec.png);
+  background-position: 90% 100%;
+  background-repeat: no-repeat;
+  background-size: 30%;
+}
+.news .sidtt{/*.service .sidtt,*/
+  position: absolute;
+  top: 5em;
+  right:1.5em;
+  transform: rotate(-90deg);
+  transform-origin: 100% 0;
+}
+.con .sidtt{
+  color: #fb3;
+  text-shadow: .1em .1em 0 rgba(0,0,0,.6);
+}
+.con .sidtt h3{
+  position:relative;
+}
+.con .sidtt h3::after{
+  content:'';
+  position:absolute;
+  top: .8em;
+  width: 150px;
+  height: 5px;
+  background-color: #fb3;
+  opacity: .5;
+  margin-left: 1.5em;
+  z-index: 5;
+}
+.con .txt{
+  width: 50%;
+  padding: 1em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.con .txt h2{
+  text-align:center;
+  font-size: 3em;
+  text-shadow: 0 0 5px black;
+  padding: .2em 0 .5em;
+}
+.con .txt h2::before{
+  
+}
+.con .txt h2::after{
+  
+}
+.con .txt p{
+  line-height: 2;
+  color: rgba(255,255,255,.75);
+}
+.con .txt .btn{
+  align-self: flex-end;
+  position:relative;
+}
+.con .txt .btn a{
+  margin: 1.5em .8em .8em;
+  padding: .3em;
+  background:linear-gradient(-45deg,transparent 10%,#663 0,#663 90%,transparent 0,transparent 100%) ;
+  color: rgba(255, 255, 255,.5);
+  display: block;
+  font-weight: 300;
+  position:relative;
+}
+.con .txt a.bmore::after{
+  content:'';
+  position: absolute;
+  display: inline-block;
+  left: .3em;     top:.3em;
+  width: 3em;    height: 2em;
+  z-index: -1;
+  background:linear-gradient(-45deg,transparent 10%,#000 0,#000 90%,transparent 0,transparent 100%) ;
+  filter: blur(5px) ;
+  opacity: .5;
+  -webkit-filter: blur(5px) ;
+}
+/* .con .wrapitemservice .txt .btn a.bmore{
+  z-index: 5 !important ;
+}
+.con .wrapitemservice .txt .btn a.bmore::after{
+  z-index: 0.5;
+} */
+.con .img{
+  width: 300px;
+  text-align: center;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+.con .shop .img{
+  justify-content: flex-start;
+  background:url(../img/decoration-frame.png), url(../img/shopitem1-1.jpg),url(../img/decoration-frame.png),url(../img/shopitem1.jpg);
+  background-repeat: no-repeat;
+  background-size:303px,174px;
+  background-position:25px 74% , 67% 70%,-21px -21px, 40px 18px;
+  overflow: visible;
+}
+.con .img .pic{
+  width: 350px;
+}
+.con .img .pic img{
+  width: 100%;
+}
+
+
+.con .shop .txt{
+  padding-left: 3em;
+}
+/*shop頭皮屑*/
+.con .shop{
+  background-image: url(../img/index-shop-dec2.png),url(../img/index-shop-dec.png);
+  background-position: 85% 50%,85% 70%;
+  background-repeat: no-repeat;
+}
+.con .shop .img{
+  height: 618px;
+}
+/*視差效果背景，還有針對整個service區塊的調整==*/
+.con .wrapitemservice{
+  width: 100%;
+  position: relative;
+  /* overflow-x: hidden; */
+}
+.con .wrapitemservice .fixbg{
+  width: 100%;
+  background:url(../img/index-service-bg.jpg) 50% 30% / cover;
+  background-attachment: fixed;
+  -webkit-clip-path: polygon(85% 0, 100% 15%, 100% 85%, 15% 100%, 0 85%, 0 15%);
+  clip-path: polygon(85% 0, 100% 15%, 100% 85%, 15% 100%, 0 85%, 0 15%);
+}
+.con .wrapitemservice .sidtt{
+  position: absolute;
+  top: 5em;
+  right:10em;
+  transform: rotate(-90deg);
+  transform-origin: 100% 0;
+  z-index: 2;
+  text-shadow: 0 0 5px black;
+}
+.con .service{
+  position:relative;
+  margin-bottom: 15em;
+}
+.con .service .img{
+  width: 300px;
+  height: 300px;
+}
+.con .wrapitemservice img{
+  position:absolute;
+  bottom:0;  right:-20em;
+  width: 75%;
+  z-index: 1;
+  transition: right .3s linear;
+  pointer-events: none;
+}
+.con .service .txt p{
+  padding: 15px;
+  text-shadow: 0 0 5px #520;
+  background-color: rgba(102, 102, 51, 0.5);
+  border-radius: 5px;
+}
+.con .service .txt .btn{
+  position: relative;
+}
+
+.con .service .txt .bmore{
+  margin: 0 3em .8em .8em;
+}
+.con .item.news{
+  display:flex;
+  justify-content:center;
+}
+.con .item.news .txt{
+  max-width: 960px;
+  background-color: rgba(102, 102, 51, 0.5);
+  padding: 25px;
+  border-radius: .3em;
+}
+.con .item.news .txt li{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+.con .item.news .txt li p,
+.con .item.news .txt li a{
+}
+.con .item.news .txt li a{
+  /* width: 80%; */
+  font-size: 1em;
+  text-indent: -1.5em;
+  margin-left: 2em;
+}
+.con .item.news .txt li a::before{
+  content:'● ';
+}
+.con .item.news .txt li span{
+  flex-grow: 1;
+  border-bottom: 2px dotted white;
+  height: .3em;
+  margin: 0 1em;
+}
+.con .item.news .txt li p{
+  /* width: 20%; */
+  font-size: 1em;
+}
+.con .item.about .pic{
+  overflow:hidden;
+  border-radius: 5px;
+  font-size: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+/*news頭皮屑*/
+.con .news{
+  background-image: url(../img/index-news-dec.png);
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 0 100%;
+}
+
+/*來調囉*/
+@media screen and (max-width:1200px){
+  .header{
+    background: url(../img/index-banner-dec.png),url("../img/index-banner.png");
+    background-repeat: no-repeat;
+    background-size: 50%,cover;
+    background-position: 100% 100%,100% 100%;
+  }
+  .con .wrapitemservice img{
+    position:absolute;
+    bottom:0;  right:0em;
+    width: 75%;
+  }
+  .con .wrapitem .item.news li{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .con .wrapitem .item.news li a{
+    width: 100%;
+  }
+  .con .wrapitem .item.news li span{
+    display: none;
+  }
+  .con .wrapitem .item.news li p{
+    padding-left: 2em;
+  }
+}
+@media screen and (max-width:899px){
+  .banner h2{
+    font-size: .9em;
+  }
+  .con .wrapitem{
+    width: 100%;
+  }
+  .con .item.shop{
+    width: 100%;
+  }
+  .con .item.shop{
+    background: none;
+    background: url(../img/index-shop-dec.png);
+    background-repeat: no-repeat;
+    background-position: 90% 93%;
+  }
+  .con .txt{
+    width: 100%;
+  }
+  .con .about .img{
+    width: 100%;
+  }
+  .con .lesson{
+    background-size: 50%;
+    background-position: 76% 99%;
+  }
+  .con .wrapitemservice img{
+    position:absolute;
+    bottom:8em;  right:0em;
+    width: 100%;
+  }
+  .con .wrapitemservice .sidtt{
+    right:3em;
+  }
+  .con .wrapitemservice .txt h2,
+  .con .wrapitemservice .txt h3{
+    padding-top: 2.5em;
+  }
+}
+@media screen and (max-width:576px){
+  .banner h1:nth-child(2){
+    font-size: 0.9em ;
+  }
+
+}

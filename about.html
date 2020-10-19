@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>About | Wonderland Studio</title>
+  <!-- ico -->
+  <link rel="Shortcut Icon" type="image/x-icon" href="./img/ico.ico">
+  <!-- 下面是字體好棒icon -->
+  <script src="https://kit.fontawesome.com/02749c2921.js" crossorigin="anonymous"></script>
+  <!-- 下面是jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- nav onclick -->
+  <script src="./js/navclick.js"></script>
+  <style>
+    @import url(./css/about.css);
+  </style>
+</head>
+<body>
+  <!-- 🔶漢堡start -->
+<button class="hamburger hamburger--spin" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+<!-- 🔶漢堡end -->
+  <div class="header">
+    <div class="wrap">
+    
+      <div class="nav">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./img/logo-white.svg" alt="logo">
+            <p>Wonderland<br>Studio</p>
+          </a>
+        </div>
+        <ul class="navlist">
+          <li><a href="./about.html" class="imhere">關於作坊</a></li>
+          <li class="ihavechildren"><a style="cursor:default;">作坊消息</a>
+            <ul class="smlist">
+              <li><a href="./blog.html">最新消息</a></li>
+              <li><a href="./blog-2.html">作品欣賞</a></li>
+            </ul>
+          </li>
+          <li class="ihavechildren"><a style="cursor:default;">作坊商品</a>
+            <ul class="smlist">
+              <li><a href="./shop.html">商品項目</a></li>
+              <li><a href="./shop-check.html">購物車</a></li>
+            </ul>
+          </li>
+          <li class="ihavechildren"><a style="cursor:default;">作坊服務</a>
+            <ul class="smlist">
+              <li><a href="./service.html">客製服務</a></li>
+              <li><a href="./shop.html">租借服務</a></li>
+            </ul>
+          </li>
+          <li><a href="./lesson.html">作坊課程</a>
+  
+          </li>
+          <li><a href="https://payment.ecpay.com.tw/Broadcaster/Donate/2A65836B17964030C7C2C83BFE801FA2" target="_blank">贊助作坊</a>
+  
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="txt">
+        <h1>關於作坊</h1>
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+
+<!-- 捨棄的部分XD -->
+<!-- <div class="fontcon">
+  <div class="classbtn">
+    <div class="wrap0">
+      <a href="#abus">Studio</a>
+      <a href="#ablc">Location</a>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+
+
+
+
+<div class="con">
+  <div class="wrap">
+    <h2 id="abus">Wonderland Studio</h2>
+    <div class="item about" >
+      <div class="txt">
+        <div class="img">
+          <img src="./img/about-studio.jpg" alt="">
+        </div>
+        <p>
+          以剝製標本為主題中心，邀請各領域剝製師進駐，賦予大體多變姿態及樣貌，與觸動人心的品牌設計結合。
+
+          標本讓我們有不同紀念過去的方式，賦予它們新的生命型態，對它們的神秘感到敬畏，為它的恣態感到驚奇。
+          品牌給我們思考激盪，夾帶獨特性的理念交換，源自於過去生活的體驗，建構著將來生活的想望。抓出品牌美好的一面，努力用各種形式將它呈現綻放，是我們一直在做的事。
+
+          首創以剝製標本為核心，與業界各領域的講師合作，開立多種手作課程，希望透過參與的過程，讓學員同時獲得心靈的滿足，及帶走滿滿的知識技能，目前已開立超過 10 種以上手作課程，吸引超過 1,500 位學員參與。
+
+          本工作室想把各種形式的美好分享給大家。經歷過生活中不同的衝撞，標本讓生活產生平衡，也時時提醒著自己向前的心情，慢下腳步感受情緒，活力地過每一天。
+        </p>
+      </div>
+    </div>
+    
+  <div class="wrap">
+    <h2 id="ablc">Location</h2>
+    <div class="item location">
+      <div class="img">
+        <i class="fas fa-map-marker-alt"></i>
+        <a href="https://goo.gl/maps/na6RG4PsxbvtCka57" target="_blank">
+          <img src="./img/lesson-map.png" alt=""></a>
+      </div>
+      <div class="txt">
+        <div class="map">
+          <div class="img">
+            <img src="./img/about-decloc.png" alt="">
+          </div>
+        </div>
+        <p>綠野仙蹤工作室Wonderland Studio<br />地　　址：臺北市大安區大安路一段101巷11號<br />營業時間：週二至週五 11:00 &ndash; 19:00<br />聯絡電話：02-2700-0898</p>
+      </div>
+    </div>
+  </div>
+    
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+<button class="totop" id="totop"><i class="fas fa-dove"></i></button>
+<!-- <button class="totop" id="totop"><i class="fas fa-angle-up"></i></button> -->
+<!-- JQuery - totop -->
+<script>
+  $(function(){
+  $("#totop").on("click", function(e){// 點擊按鈕，頁面滑到最上方
+    e.preventDefault();
+    $('html, body').animate({scrollTop: 0},750);
+  });
+});
+//🔶🔶🔶🔶🔶漢堡外掛jQuery-start🔶🔶🔶🔶🔶
+$(function(){
+  // hamburger icon 的切換
+  $("button.hamburger").on("click", function(){
+    $(this).toggleClass("is-active");
+    $('.header .wrap').toggleClass('-open');
+  });
+});
+//🔶🔶🔶🔶🔶漢堡外掛jQuery-end🔶🔶🔶🔶🔶
+</script>
+
+
+<div class="footer">
+  <div class="wrap">
+    
+    <div class="item item1">
+      <div class="list">
+        <ul>
+          <h4><a href="./shop.html">Shop</a></h4>
+          <li>
+            <a href="#">蛇骨手鍊</a>
+          </li>
+          <li>
+            <a href="#">十字項鍊</a>
+          </li>
+          <li>
+            <a href="#">小手項鍊</a>
+          </li>
+          <li>
+            <a href="#">斑鳩耳墜</a>
+          </li>
+          <li>
+            <a href="#">羚羊頭骨</a>
+          </li>
+        </ul>
+        <ul>
+          <h4><a href="./service.html">Service</a></h4>
+          <li>
+            <a href="#">骨骼漂白</a>
+          </li>
+          <li>
+            <a href="#">骨骼標本</a>
+          </li>
+          <li>
+            <a href="#">標本飾品</a>
+          </li>
+          <li>
+            <a href="#">剝製標本</a>
+          </li>
+          <li>
+            <a href="#">浸製標本</a>
+          </li>
+        </ul>
+        <ul>
+          <h4><a href="./lesson.html">Lesson</a></h4>
+          <li>
+            <a href="#">小鼠標本</a>
+          </li>
+          <li>
+            <a href="#">雛鳥剝製</a>
+          </li>
+          <li>
+            <a href="#">臼齒鍊墜</a>
+          </li>
+          <li>
+            <a href="#">南西淺談</a>
+          </li>
+          <li>
+            <a href="#">詹德川講座</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="item item2">
+      
+      <ul>
+        <h4><a href="#">Wonderland Studio綠野仙蹤標本工作室</a></h4>
+        <li>地　　址：臺北市大安區大安路一段101巷11號</li>
+        <li>營業時間：週二至週五 11:00 – 19:00</li>
+        <li>聯絡電話：02-2700-0898</li>
+        <div class="minitem">
+          <a href="#" class="fb">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="#" class="tw">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+        </div>
+      </ul>
+
+    </div>
+  </div>
+<div class="copyright">
+  © copyright 2020 Wonderland Studio.
+</div>
+
+
+
+
+
+</body>
+</html>

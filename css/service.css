@@ -1,0 +1,412 @@
+@import url('./footer.css');
+@import url('./nav.css');
+.banner{
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    top: 80px;
+    background: url(../img/service-banner.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .txt{
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    transition: 2s ease;
+}
+.banner .txt:hover{
+    text-shadow: 3em 3em 5px #000;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+
+
+
+
+
+.con{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.con p,.con ul,.con li{
+    line-height: 2;
+    opacity: .8;
+}
+.con h2{
+    color: white;
+    text-shadow: 0 0 10px black;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 2em 0;
+}
+.con h3{
+    text-shadow: 0 0 5px black;
+    font-size: 2em;
+}
+.con .wrap{
+    max-width: 960px;
+    margin: auto;
+}
+.con .wrap.wrap1{
+    margin: 8em auto;
+    text-align: center;
+}
+.con .wrap .step{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+}
+.con .wrap .step i{
+    font-size: 3em;
+}
+.con .wrap.wrap1 .step span{
+    align-self: center;
+}
+.con .wrap.wrap1 .step .smst,
+.con .wrap.wrap1 .step .smst a{
+    color: white;
+    display: block;
+    text-align: center;
+}
+.con .wrap.wrap1 .step .smst:hover > a{
+    color: #fb3;
+    text-shadow: 0 0 20px black;
+}
+.con .wrap .step > span{
+    font-size: 1.5em;
+    color: white;
+    padding: 5px;
+}
+.con .wrap .step h3,
+.con .wrap .step h4,
+.con .wrap .step i{
+    padding: .2em 0;
+}
+
+
+
+.con .wrap1{
+    position: relative;
+}
+.con .wrap1 .prom{
+    color: #520;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    z-index: 8;
+    /* transform: translateY(-50%); */
+    background: rgba(255, 255, 255,.5);
+    display: flex;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    animation: promup .3s ease-in infinite alternate;
+}
+@keyframes promup{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(5px);}
+}
+.con .wrap1 .prom button{
+    height: 100%;
+    cursor: pointer;
+    color: #520;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 5px;
+    border: 0 solid #000;
+    background: transparent;
+}
+.con .wrap2 button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 3em;
+}
+.con .wrap2 button[disabled="disabled"]{
+    display: none !important;
+}
+.con .wrap2 button:hover i{
+    opacity: 1;
+}
+.con .wrap2 button i{
+    /* background: #520; */
+    color: #fff;
+    opacity: .5;
+}
+.con .wrap2 .smst{
+    /* max-width: 960px; */
+    margin: 80px auto 0 ;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    border-radius: 5px;
+    background: rgba(102, 102, 51,.95);
+    padding: 20px ;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.con .wrap2 .smst .tit{
+    width: 30%;
+    align-self: center;
+}
+.con .wrap.wrap2 .smst .txt{
+    width: 70%;
+    padding:50px 0 ;
+}
+.con .wrap2 .smst i{
+    font-size: 3em;
+    line-height: 1.8em;
+}
+.con .wrap2 h3{
+    font-size: 1.8rem;
+    line-height: 1.5em;
+    padding: 0 0 .8em;
+    text-align: center;
+}
+.con .wrap2 h4{
+    font-size: 1.2em;
+}
+.con .wrap2 ul{
+    font-weight: 400;
+    margin-left: 1.5em;
+    padding: 0 0 1.2em;
+}
+.con .wrap2 li{
+    list-style: circle;
+    font-weight: 200;
+    padding-left: .5em;
+    margin-left: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+.con .wrap.wrap3{
+    margin: auto;
+}
+.con .wrap .example{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+}
+.con .wrap .example .item{
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 0;
+    overflow: hidden;
+}
+.con .wrap .example .item:hover .txt{
+}
+.con .wrap .example .item .img,
+.con .wrap .example .item img{
+    object-fit: cover;
+}
+.con .wrap .example .item .txt{
+    background-color: rgba(102, 102, 51,.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* top: 0;bottom: 0;left: 0;right: 0; */
+    padding: 1rem;
+    color: white;
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+}
+.con .wrap .example .item .txt h3{
+    font-size: 2rem;
+    text-shadow: 0 0 10px black;
+    padding-bottom: .5em;
+}
+.con .wrap .example .item .txt p{
+    font-size: 1rem;
+    text-shadow: 0 0 1px black;
+    opacity: .8;
+}
+
+
+.con .wrap.wrap4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    color: white;
+    margin: 3em auto;
+}
+.con .wrap.wrap4 h2{
+    text-align: center;
+}
+.con .wrap.wrap4 p{
+    opacity: .8;
+}
+
+
+
+
+
+
+
+
+
+/*這個CSS是給wrap2-windwo版的*/
+.windowforwrap2{/*addClass-滿版黑屏*/
+    position:fixed;top:0;left:0;
+    min-width: 100%; min-height: 100vh;
+    z-index:9;
+    background: rgba(0,0,0,0.5);
+}
+.windowforbgst{/*addClass-給按鈕定位用的爸爸*/
+    z-index:8;
+    position:absolute;
+    top:50%;left:50%;transform: translate(-50%,-50%);
+    width: 95%;
+    max-width:960px;
+    height: 100vh;
+}
+.windowforsmst{/*addClass-給卡片固定位置*/
+    height: 70%;
+    position:absolute;
+    top:50%;left:50%;transform: translate(-50%,-50%);
+    width: 95%;
+    max-width:960px;
+    margin: 0 !important;
+    padding: 20px !important;
+}
+.con .wrap2 .bgst button{
+    position: absolute;
+    z-index: 3;
+
+}
+.con .wrap2 .bgst button.windowbtncloss{
+    top:7%;right: 2%;
+    transform: translateY(50%);
+}
+.con .wrap2 .bgst button.winsonbtnpre{
+    bottom:50%;left:2%;
+    transform: translateY(50%);
+}
+.con .wrap2 .bgst button.winsonbtnnext{
+    bottom:50%;right:2%;
+}
+.con .wrap2 .smwrapper .smst .txt{
+    overflow-y: auto;
+}
+/*🔸🔸上一步下一步🔸🔸*/
+.wrap2 .smwrapper[data-page] .smst{display:none;}
+.wrap2 .smwrapper[data-page="1"] .smst:nth-child(1),
+.wrap2 .smwrapper[data-page="2"] .smst:nth-child(2),
+.wrap2 .smwrapper[data-page="3"] .smst:nth-child(3),
+.wrap2 .smwrapper[data-page="4"] .smst:nth-child(4),
+.wrap2 .smwrapper[data-page="5"] .smst:nth-child(5)
+{display: flex !important;}
+
+
+.header .wrap .nav > ul >li:nth-child(4)::after{
+    border-top: 8px solid #fb3;
+  }
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1201px){
+    .banner{
+        top: initial;  
+    }
+}
+@media screen and (max-width:992px){
+    .con .wrap1 .step{
+        flex-wrap: wrap;
+        /* justify-content: flex-start; */
+    }
+    .con .wrap1 span{
+        display: none;
+    }
+    .con .wrap1 .step .smst{
+        width: calc((100% - 80px) / 3);
+        margin-bottom: 50px;
+    }
+    .con .wrap2 button{
+        font-size: 2.5em;
+    }
+}
+@media screen and (max-width:767px){
+    .con .wrap2 .smst .tit h3{
+        font-size: 1.5em !important;
+        padding: 0;
+    }
+    .con .wrap2 .smst{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width:576px){
+    h1{
+        font-size: 2em !important;
+    }
+    .con .wrap1 .step .smst{
+        width: calc((100% - 80px) / 2);
+    }
+    .con .wrap1 .step {
+        justify-content: space-between;
+    }
+
+    .con .wrap2 .smst .tit,
+    .con .wrap2 .smst .txt{
+        width: 100%;
+    }
+    .con .wrap2 .smst .tit i{
+        font-size: 1.5em;
+    }
+    .con .wrap.wrap2 .smst .txt{
+        padding: 0;
+        width: 100%;
+    }
+    .con .wrap3 .example .item{
+        width: 100%;
+    }
+}
+@media screen and (max-height:480px){
+    .con .wrap2 .smst{
+        margin-bottom: 0px;
+    }
+    .con .wrap2 h3{
+        font-size: 0.6em;
+    }
+    .con .wrap2 .smst i{
+        font-size: 0;
+    }
+}

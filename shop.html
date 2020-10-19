@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Products | Shop | Wonderland Studio</title>
+    <!-- ico -->
+    <link rel="Shortcut Icon" type="image/x-icon" href="./img/ico.ico">
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/02749c2921.js" crossorigin="anonymous"></script>
+  <!-- nav onclick -->
+  <script src="./js/navclick.js"></script>
+  <!-- classbtn -->
+  <script src="./js/shop.js"></script>
+    <style>
+      @import url(./css/shop.css);
+    </style>
+</head>
+<body>
+  <!-- 🔶漢堡start -->
+<button class="hamburger hamburger--spin" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+<!-- 🔶漢堡end -->
+  <div class="header">
+    <div class="wrap">
+    
+      <div class="nav">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./img/logo-white.svg" alt="logo">
+            <p>Wonderland<br>Studio</p>
+          </a>
+        </div>
+        <ul class="navlist">
+          <li><a href="./about.html">關於作坊</a></li>
+          <li class="ihavechildren"><a style="cursor:default;">作坊消息</a>
+            <ul class="smlist">
+              <li><a href="./blog.html">最新消息</a></li>
+              <li><a href="./blog-2.html">作品欣賞</a></li>
+            </ul>
+          </li>
+          <li class="ihavechildren"><a style="cursor:default;"class="imhere">作坊商品</a>
+            <ul class="smlist">
+              <li><a href="./shop.html"class="imhere">商品項目</a></li>
+              <li><a href="./shop-check.html">購物車</a></li>
+            </ul>
+          </li>
+          <li class="ihavechildren"><a style="cursor:default;">作坊服務</a>
+            <ul class="smlist">
+              <li><a href="./service.html">客製服務</a></li>
+              <li><a href="./shop.html">租借服務</a></li>
+            </ul>
+          </li>
+          <li><a href="./lesson.html">作坊課程</a>
+  
+          </li>
+          <li><a href="https://payment.ecpay.com.tw/Broadcaster/Donate/2A65836B17964030C7C2C83BFE801FA2" target="_blank">贊助作坊</a>
+  
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="txt">
+        <h1>作坊商品</h1>
+      </div>
+      <div class="classbtn">
+        <div class="wrap0">
+          <form action="">
+            <input type="button" value="全部" id="all" class="btn letmedown">
+            <input type="button" value="標本" id="main" class="btn">
+            <input type="button" value="周邊" id="rel" class="btn">
+              <div class="search">
+                <input type="search" class="search">
+                <button class="search"><i class="fa fa-search"></i></button>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  
+  <!-- 「-main」表標本；「-rel」表周邊 -->
+  <div class="con">
+    <div class="wrap wrap1">
+      <div class="item -main">
+        <a href="./shop-1-1.html">
+          <div class="img">
+            <img src="./img/shopitem1-1.jpg">
+          </div>
+          <div class="txt">
+            <h3>蛇骨手鍊</h3>
+              <p>NT$950</p>
+          </div>
+        </a>
+        <button><i class="fas fa-shopping-cart"></i>
+          加入購物車</button>
+      </div>
+      <div class="item -rel">
+        <a href="./shop-1-1.html">
+          <div class="img">
+            <img src="./img/shopitemrel01.jpg">
+          </div>
+          <div class="txt">
+            <h3>玻璃罩</h3>
+              <p>NT$218</p>
+          </div>
+        </a>
+        <button><i class="fas fa-shopping-cart"></i>
+          加入購物車</button>
+      </div>
+
+      <div class="item -main">
+        <a href="./shop-1-1.html">
+          <div class="img">
+            <img src="./img/shopitem2.jpg">
+          </div>
+          <div class="txt">
+            <h3>斑鳩腳爪</h3>
+              <p>NT$1,100</p>
+          </div>
+        </a>
+        <button><i class="fas fa-shopping-cart"></i>
+          加入購物車</button>
+      </div>
+
+      <div class="item -main">
+        <a href="./shop-1-1.html">
+          <div class="img">
+            <img src="./img/shopitem3.jpg">
+          </div>
+          <div class="txt">
+            <h3>貓尾項鍊</h3>
+              <p>NT$590</p>
+          </div>
+        </a>
+        <button><i class="fas fa-shopping-cart"></i>
+          加入購物車</button>
+      </div>
+
+      <div class="item -rel">
+        <a href="./shop-1-1.html">
+          <div class="img">
+            <img src="./img/shopitemrel02.jpg">
+          </div>
+          <div class="txt">
+            <h3>玻璃瓶</h3>
+              <p>NT$298</p>
+          </div>
+        </a>
+        <button><i class="fas fa-shopping-cart"></i>
+          加入購物車</button>
+      </div>
+
+      <div class="item -rel">
+        <a href="./shop-1-1.html">
+          <div class="img">
+            <img src="./img/shopitemrel03.jpg">
+          </div>
+          <div class="txt">
+            <h3>耶穌項鍊</h3>
+              <p>NT$450</p>
+          </div>
+        </a>
+        <button><i class="fas fa-shopping-cart"></i>
+          加入購物車</button>
+      </div>
+      <div class="item -main">
+        <a href="./shop-1-1.html">
+          <div class="img">
+            <img src="./img/shopitem4.jpg">
+          </div>
+          <div class="txt">
+            <h3>十字架白鼠手手項鍊</h3>
+              <p>NT$550</p>
+          </div>
+        </a>
+        <button><i class="fas fa-shopping-cart"></i>
+          加入購物車</button>
+      </div>
+      
+      <div class="item -main">
+        <a href="./shop-1-1.html">
+          <div class="img">
+            <img src="./img/shopitem5.jpg">
+          </div>
+          <div class="txt">
+            <h3>貓肋骨鑽項鍊</h3>
+              <p>NT$790</p>
+          </div>
+        </a>
+        <button><i class="fas fa-shopping-cart"></i>
+          加入購物車</button>
+      </div>
+      <div class="item -main">
+        <a href="./shop-1-1.html">
+          <div class="img">
+            <img src="./img/shopitem6.jpg">
+          </div>
+          <div class="txt">
+            <h3>貓尾骨手鍊</h3>
+              <p>NT$590</p>
+          </div>
+        </a>
+        <button><i class="fas fa-shopping-cart"></i>
+          加入購物車</button>
+      </div>
+
+      <div class="item -main">
+        <a href="./shop-1-1.html">
+          <div class="img">
+            <img src="./img/shopitem7.jpg">
+          </div>
+          <div class="txt">
+            <h3>豬牙項鍊</h3>
+              <p>NT$790</p>
+          </div>
+        </a>
+        <button><i class="fas fa-shopping-cart"></i>
+          加入購物車</button>
+      </div>
+
+      <div class="item -main">
+        <a href="./shop-1-1.html">
+          <div class="img">
+            <img src="./img/shopitem8.jpg">
+          </div>
+          <div class="txt">
+            <h3>青鳳蝶翅膀玻璃項鍊</h3>
+              <p>NT$890</p>
+          </div>
+        </a>
+        <button><i class="fas fa-shopping-cart"></i>
+          加入購物車</button>
+      </div>
+
+      <div class="item -main">
+        <a href="./shop-1-1.html">
+          <div class="img">
+            <img src="./img/shopitem9.jpg">
+          </div>
+          <div class="txt">
+            <h3>耶穌頂骨項鍊</h3>
+              <p>NT$790</p>
+          </div>
+        </a>
+        <button><i class="fas fa-shopping-cart"></i>
+          加入購物車</button>
+      </div>
+
+      <div class="item -main">
+        <a href="./shop-1-1.html">
+          <div class="img">
+            <img src="./img/shopitem10.jpg">
+          </div>
+          <div class="txt">
+            <h3>鼠肩胛骨耳環</h3>
+              <p>NT$490</p>
+          </div>
+        </a>
+        <button><i class="fas fa-shopping-cart"></i>
+          加入購物車</button>
+      </div>
+
+      <div class="item -main">
+        <a href="./shop-1-1.html">
+          <div class="img">
+            <img src="./img/shopitem11.jpg">
+          </div>
+          <div class="txt">
+            <h3>鹿頭剝製</h3>
+              <p>NT$3,890</p>
+          </div>
+        </a>
+        <button><i class="fas fa-shopping-cart"></i>
+          加入購物車</button>
+      </div>
+
+      <div class="item -main">
+        <a href="./shop-1-1.html">
+          <div class="img">
+            <img src="./img/shopitem12.jpg">
+          </div>
+          <div class="txt">
+            <h3>【季節限定】綠蜥蜴耳環</h3>
+              <p>NT$790</p>
+          </div>
+        </a>
+        <button><i class="fas fa-shopping-cart"></i>
+          加入購物車</button>
+      </div>
+
+
+
+    </div>
+     
+    
+  </div>
+<script>
+  //🔶漢堡jQuery-start
+$(function(){
+  // hamburger icon 的切換
+  $("button.hamburger").on("click", function(){
+    $(this).toggleClass("is-active");
+    $('.header .wrap').toggleClass('-open');
+  });
+});
+//🔶漢堡jQuery-end
+</script>
+
+
+
+
+
+
+
+
+  <!-- <button class="totop" id="totop"><i class="fas fa-angle-up"></i></button> -->
+  <button class="totop" id="totop"><i class="fas fa-dove"></i></button>
+  <button class="openlist" id="openlist"><i class="fas fa-shopping-cart"></i></button>
+
+  <div class="shoplist">
+    <button class="close">X</button>
+    <h2>購物清單</h2>
+    <div class="wrap">
+      <div class="item">
+        <img src="./img/shopitem12.jpg" alt="">
+        <div class="info">
+          <h3>【季節限定】綠蜥蜴耳環</h3>
+          <p>$790</p>  
+          <input type="number" min="0" value="1">
+        </div>
+        <button class="trash"><i class="fas fa-trash"></i></button>
+      </div>
+      <div class="item">
+        <img src="./img/shopitem10.jpg" alt="">
+        <div class="info">
+          <h3>鼠肩胛骨耳環</h3>
+          <p>$490</p>  
+          <input type="number" min="0" value="1">
+        </div>
+        <button class="trash"><i class="fas fa-trash"></i></button>
+      </div>
+      <div class="item">
+        <img src="./img/shopitem1-1.jpg" alt="">
+        <div class="info">
+          <h3>蛇骨手練</h3>
+          <p>$950</p>  
+          <input type="number" min="0" value="1">
+        </div>
+        
+        <button class="trash"><i class="fas fa-trash"></i></button>
+      </div>
+      <div class="item">
+        <img src="./img/shopitem8.jpg" alt="">
+        <div class="info">
+          <h3>青鳳蝶翅膀玻璃項鍊</h3>
+          <p>$890</p>  
+          <input type="number" min="0" value="1">
+        </div>
+        
+        <button class="trash"><i class="fas fa-trash"></i></button>
+      </div>
+    </div>
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+  <div class="wrap">
+    
+    <div class="item item1">
+      <div class="list">
+        <ul>
+          <h4><a href="./shop.html">Shop</a></h4>
+          <li>
+            <a href="#">蛇骨手鍊</a>
+          </li>
+          <li>
+            <a href="#">十字項鍊</a>
+          </li>
+          <li>
+            <a href="#">小手項鍊</a>
+          </li>
+          <li>
+            <a href="#">斑鳩耳墜</a>
+          </li>
+          <li>
+            <a href="#">羚羊頭骨</a>
+          </li>
+        </ul>
+        <ul>
+          <h4><a href="./service.html">Service</a></h4>
+          <li>
+            <a href="#">骨骼漂白</a>
+          </li>
+          <li>
+            <a href="#">骨骼標本</a>
+          </li>
+          <li>
+            <a href="#">標本飾品</a>
+          </li>
+          <li>
+            <a href="#">剝製標本</a>
+          </li>
+          <li>
+            <a href="#">浸製標本</a>
+          </li>
+        </ul>
+        <ul>
+          <h4><a href="./lesson.html">Lesson</a></h4>
+          <li>
+            <a href="#">小鼠標本</a>
+          </li>
+          <li>
+            <a href="#">雛鳥剝製</a>
+          </li>
+          <li>
+            <a href="#">臼齒鍊墜</a>
+          </li>
+          <li>
+            <a href="#">南西淺談</a>
+          </li>
+          <li>
+            <a href="#">詹德川講座</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="item item2">
+      
+      <ul>
+        <h4><a href="#">Wonderland Studio綠野仙蹤標本工作室</a></h4>
+        <li>地　　址：臺北市大安區大安路一段101巷11號</li>
+        <li>營業時間：週二至週五 11:00 – 19:00</li>
+        <li>聯絡電話：02-2700-0898</li>
+        <div class="minitem">
+          <a href="#" class="fb">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="#" class="tw">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+        </div>
+      </ul>
+
+    </div>
+  </div>
+<div class="copyright">
+  © copyright 2020 Wonderland Studio.
+</div>
+
+
+
+
+
+</body>
+</html>

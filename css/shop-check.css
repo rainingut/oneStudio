@@ -1,0 +1,209 @@
+@import url('./footer.css');
+@import url('./nav.css');
+body{
+    overflow-x: hidden;
+}
+.banner{
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    top: 80px;
+    background: url(../img/shop-banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .txt{
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    transition: 2s ease;
+}
+.banner .txt:hover{
+    text-shadow: 3em 3em 5px #000;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+.con{
+    padding-top: 100px;
+    max-width: 800px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right:20px;
+}
+.con .wrap{
+    background-color: #edc;
+    width: 100%;
+    border-radius:5px ;
+    margin: 15px auto 5em;
+    color: #520;
+}
+.con .wrap .signin fieldset .wrapitem,
+.con .wrap .signup fieldset .wrapitem{
+    padding: 5em;
+} 
+.con .wrap .signin input,
+.con .wrap .signup input{
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+}
+.con .wrap .signin input[type='text'],
+.con .wrap .signup input[type='text'],
+.con .wrap .signin input[type='password'],
+.con .wrap .signup input[type='password'],
+.con .wrap .signup input[type='email']{
+    border: 2px solid rgba(160, 124, 101, .6);
+}
+.con .wrap .signin,
+.con .wrap .signup{
+    position: relative;
+}
+.con .wrap .signin input.showNow,
+.con .wrap .signup input.showNow{
+    width: 0;height: 0;
+}
+.con .wrap .signin input.showNow::before,
+.con .wrap .signup input.showNow::before{
+    position: absolute; right: 4em;
+    content: '\f06e';
+    width: 50px;
+    height: 50px;
+    font-family: "Font Awesome 5 Free";
+    font-size: 20px;
+    color: #520;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con .wrap .signin input.showNow:checked::before,
+.con .wrap .signup input.showNow:checked::before{
+    content:'\f070';
+}
+.con .wrap .signin input[type='submit'],
+.con .wrap .signup input[type='submit']{
+    background: linear-gradient(#fec,#fb3);
+    border: none;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 700;
+    color: #520;
+    margin: 20px 0;
+}
+.con .wrap .signin a[href="https://reurl.cc/b5xMRy"]{
+    color: #520;
+    margin-left: 2em;
+    font-size: .5em;
+    text-decoration: underline;
+}
+.con .wrap .signin .onsign{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.con .wrap .signin .onsign .sm{
+    width: 50%;
+    margin: 10px;
+    background-color: #663 ;
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+fieldset{
+    border: none;
+}
+.con .wrap .signin .onsign .sm .txt{
+    display: inline-block;
+}
+.con .wrap .signin .onsign .sm i{
+    width: 40px;
+    height: 40px;
+    font-size: 35px;
+    color: #520;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:5px ;
+    margin: 5px;
+}
+.con .wrap .signin .onsign .sm p{
+    flex-grow: 1;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+.con .wrap form{
+    border-bottom: 1px solid #663;
+}
+.con .wrap form hr{
+    text-align:center;
+    line-height:0px;
+    background: linear-gradient(to right, transparent, rgba(85, 34, 0,.75),transparent);
+    border: none;
+    width: 100%;
+    margin: 10px 0;   
+    height: 1px;
+}
+/*拉片樣式*/
+.con .wrap form.signup{
+    position:relative;
+}
+.con .wrap form.signup span.slidtoggle{
+    background: #663;
+    color: #fec;
+    position: absolute;
+    left: 0; right: 0; bottom: -3em;
+    z-index: 5;
+    padding: 10px 10px 15px 10px;
+    border-radius:  0 0 50% 50% ;
+    cursor:pointer;
+    text-align: center;
+}
+/*縮合效果*/
+.con  .wrap form.signup fieldset.togglebottom{
+    height: 0;
+    overflow:hidden;
+    transition: height .5s ease;
+}
+.con  .wrap form.signup fieldset.togglebottom.-on{
+    height: 600px;
+}
+.header .wrap .nav > ul >li:nth-child(3)::after{
+    border-top: 8px solid #fb3;
+  }
+/* https://codepen.io/carlos411/pen/qBOGPwz */
+
+@media screen and (max-width:1200px){
+    .banner{
+        top: initial;  
+    }
+}
+@media screen and (max-width:575px){
+    .con .wrap .signin fieldset .wrapitem,
+    .con .wrap .signup fieldset .wrapitem{
+    padding: 2em;
+    } 
+    .con  .wrap form.signup fieldset.togglebottom.-on{
+        height: 500px;
+    }
+    .con .wrap .signin .onsign .sm p{
+        font-size: 1em;
+    }
+    .con .wrap .signin input.showNow::before,
+    .con .wrap .signup input.showNow::before{
+        right: 2em;
+    }
+}

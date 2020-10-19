@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Shop | Wonderland Studio</title>
+      <!-- ico -->
+  <link rel="Shortcut Icon" type="image/x-icon" href="./img/ico.ico">
+  <!-- 字體好棒.jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/02749c2921.js" crossorigin="anonymous"></script>
+    <!-- nav onclick -->
+  <script src="./js/navclick.js"></script>
+  <!-- recomment拖曳 -->
+  <script src="./js/shop1-1.js"></script>
+    <style>
+      @import url(./css/shop-1-1.css);
+    </style>
+</head>
+<body>
+  <!-- 🔶漢堡start -->
+<button class="hamburger hamburger--spin" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+<!-- 🔶漢堡end -->
+<div class="header">
+  <div class="wrap">
+  
+    <div class="nav">
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./img/logo-white.svg" alt="logo">
+          <p>Wonderland<br>Studio</p>
+        </a>
+      </div>
+      <ul class="navlist">
+        <li><a href="./about.html">關於作坊</a></li>
+        <li class="ihavechildren"><a style="cursor:default;">作坊消息</a>
+          <ul class="smlist">
+            <li><a href="./blog.html">最新消息</a></li>
+            <li><a href="./blog-2.html">作品欣賞</a></li>
+          </ul>
+        </li>
+        <li class="ihavechildren"><a style="cursor:default;"class="imhere">作坊商品</a>
+          <ul class="smlist">
+            <li><a href="./shop.html"class="imhere">商品項目</a></li>
+            <li><a href="./shop-check.html">購物車</a></li>
+          </ul>
+        </li>
+        <li class="ihavechildren"><a style="cursor:default;">作坊服務</a>
+          <ul class="smlist">
+            <li><a href="./service.html">客製服務</a></li>
+            <li><a href="./shop.html">租借服務</a></li>
+          </ul>
+        </li>
+        <li><a href="./lesson.html">作坊課程</a>
+
+        </li>
+        <li><a href="https://payment.ecpay.com.tw/Broadcaster/Donate/2A65836B17964030C7C2C83BFE801FA2" target="_blank">贊助作坊</a>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+        <!-- <div class="banner">
+          <div class="txt">
+             <h1>Shop</h1> 
+          </div>
+        </div> -->
+      </div>
+
+      
+      <div class="bread">
+        <ul>
+          <li><a href="./index.html">Index</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Main</a></li>
+          <li><a class="righthere">蛇骨手鍊</a></li>
+        </ul>
+
+      </div>
+
+      <div class="con">
+
+
+
+        <div class="wrap wrap1">
+            <div class="img">
+              <img src="./img/shopitem1-1.jpg" alt="">
+            </div>
+            <div class="info">
+              <div class="txt">
+                <h2>蛇骨手鍊</h2>
+                <h2 class="price">NT$950</h2>
+                <p>
+                  蛇骨手環－三種尺寸
+                  <ul>
+                    <li>S－－3mm</li>
+                    <li>M－－5mm</li>
+                    <li>L－－8mm</li>
+                  </ul>
+                </p>
+              </div>
+          
+              <form action="">
+                <div>
+                  <label for="size">尺寸：</label>
+                  <select name="size" id="size">
+                    <option value="op1">S</option>
+                    <option value="op2">M</option>
+                    <option value="op3">L</option>
+                  </select>
+                </div>
+                <div class="num">
+                  <label for="num">數量：</label>
+                  <input type="number" name="num" id="num" value="1" min="1" max="3">
+                </div>
+                <div class="btn">
+                  <input type="button" value="直接購買" onclick="location.href='./shop-check.html'" id="buynow">
+                  <input type="submit" value="加入購物車" id="incar">
+                </div>
+              </form>
+            </div>
+        </div>
+
+
+
+      <div class="wrap wrap2">
+        <div class="tablist">
+          <ul>
+            <li><a href="#" class="tab -on" data-target="tab1">商品描述</a></li>
+            <li><a href="#" class="tab" data-target="tab2">訂購須知</a></li>
+            <li><a href="#" class="tab" data-target="tab3">配送須知</a></li>
+          </ul>
+        </div>
+        
+        <div class="container">
+          <div class="tab tab1 -on">
+            <img src="./img/shop-1-1-container1-1.jpg" alt="">
+            <h3>精美包裝</h3>
+            <p>精美盒子*1
+              時尚手提袋*1
+              佈布*1塊
+              高級密封透明袋*1</p>
+            <img src="./img/shop-1-1-container1-2.jpg" alt="">
+            <h3>商品尺寸</h3>
+            <p>尺碼均為平鋪手工測量，因每個人的測量方式不同
+              會有0.2-0.4CM的誤差請見諒</p>
+              <img src="./img/shop-1-1-container1-3.jpg" alt="">
+            <h3>製作過程</h3>
+            <ol>
+              <li>將皮胚對切</li>
+              <li>泡石灰(脫毛)</li>
+              <li>整理</li>
+              <li>脫灰、酵解</li>
+              <li>植物鞣制</li>
+              <li>脫水</li>
+              <li>加脂</li>
+              <li>首輪延展</li>
+              <li>乾燥、除臭</li>
+              <li>第二次延展、削薄</li>
+              <li>再次鞣制、染色</li>
+              <li>脫水</li>
+              <li>第三次延展</li>
+              <li>再次進行乾燥、除臭</li>
+              <li>打皮</li>
+              <li>塗裝</li>
+              <li>拋光</li>
+              <li>計量</li>
+              <li>打包、出品</li>
+            </ol>
+            <p>PS: 因飾品為手工訂製，我們會安排師傅製作，約5-7個工作天(不含假日)，請大家多多包涵☺</p>
+            <img src="./img/shop-1-1-container1-4.jpg" alt="">
+            <h3>保養</h3>
+            <p>盡量用軟布擦拭,避免接觸化學品, 
+              避免刮划,避免沐浴時配戴, 
+              避免大量出汗時配戴,
+              避免睡覺時配戴</p><br>
+            <p>
+              歡迎光臨綠野仙蹤標本工作室
+              工作室多年專注高品質流行飾品
+              本店所售商品均有品質保證，請放心購買
+              收到貨品后有任何問題請第一時間聯繫我們02-2700-0898
+              保證給您一個滿意的回復
+              非常榮幸在成長路上能得到您的支持和鼓勵
+              喜歡請多關注工作室的官網、FB粉絲專頁及Twitter哦！
+              萬分感謝～～！
+            </p>
+              
+
+          </div>
+          <div class="tab tab2">
+            <h3>訂購須知＆售後服務</h3>
+            <img src="./img/shop-1-1-container2-1.jpg" alt="">
+            <ul>
+              <li>不知道哪一款飾品適合送給朋友，歡迎加入工作室 LINE ID：@wonderlandstudio，線上客服直接推薦你。</li>
+              <li>售後一個月內，因非人為意外不小心刮傷或需要調整、穿線，都可以帶回門市，我們替飾品免費健康檢查</li>
+              <li>雙北市地區之訂單：當日 12：00 前完成訂購，可於當日下午到貨。若於 12：00 後完成訂購，則於隔日到貨。</li>
+              <li>雙北市以外地區之訂單：請於欲送達日期前 1-4 個工作天（不包含假日）完成訂購。若非上述時間內訂購，將依照工作室的貨運安排進行配送。</li>
+              <li>到店自取之訂單：當日 12：00 前完成訂購，可於當日下午取貨。若於 12：00 後完成訂購，則於隔日自取</li>
+              <li>收到款項後，訂單才會成立並進行出貨。</li>
+              <li>送達時間 24 小時內不得取消訂單，若需更改訂單，請於送達時間前 24 小時聯繫客服，由專人為你服務。</li>
+              <li>配送時間請選擇上午（10：00-12：00）、下午（14：00-18：00）兩時段，無法指定確切到貨時間。</li>
+              <li>緊急訂購、特殊需求、或需選擇其他到貨時間，請加入工作室 LINE ID：@wonderlandstudio ，於客服時間內洽詢（10：00- 18：00）。</li>
+              <li>若訂購商品缺貨，工作室客服將主動聯繫詢問更換。</li>
+              <li>每筆交易僅含一次配送服務內容，請確認收件資訊的完整，以及收件地址是否能於選擇時間內簽收，以免造成二次運送（含修改地址）須負擔二次運費。</li>
+              <li>其他未解疑問，請詳見 常見 Q&amp;A</li>
+              </ul>
+          </div>
+          <div class="tab tab3">
+            <p>
+              總價內含運費，立即下訂為你配送到指定地點。
+              精緻時尚的飾品，我們提供全台專車代客配送服務。
+              讓我們幫你把最好的祝福與心意送到重要的人心坎裡。
+            </p>
+            <img src="./img/shop-1-1-container3-1.jpg" alt="">
+            <h3>注意事項</h3>
+            <ol>
+              <li>台灣東部（花蓮、台東）及離島地區暫不提供工作室專車運送服務。</li>
+              <li>若台灣設計飾品需寄送至海外地區，請聯繫 LINE 客服：@wonderlandstudio</li>
+              <li>購買空容器、裱框、支架等周邊商品，郵局運費統一 $80。</li>
+            </ol>            
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- tab頁籤 -->
+      <script>
+        $(function(){
+          $("a.tab").on("click", function(e){
+            e.preventDefault();
+            
+            /* 將頁籤列表移除所有 -on，再將指定的加上 -on */
+            $(this).closest("ul").find("a.tab").removeClass("-on");
+            $(this).addClass("-on");
+            
+            /* 找到對應的頁籤內容，加上 -on 來顯示 */
+            $("div.tab").removeClass("-on");
+            $("div.tab." + $(this).attr("data-target")).addClass("-on");
+          });
+        });
+      </script>
+
+
+
+
+
+<div class="recommand">
+  <h2>Recommand</h2>
+  <div class="wrap3">
+    <div class="item">
+      <a href="#">
+        <div class="img">
+          <img src="./img/lesson-history01.jpg" alt="">
+        </div>
+        <div class="txt"><h3>浸製八爪</h3></div>
+      </a>
+    </div>
+
+    <div class="item">
+      <a href="#">
+        <div class="img">
+          <img src="./img/lesson-history02.jpg" alt="">
+        </div>
+        <div class="txt"><h3>雛鳥骨骼</h3></div>
+      </a>
+    </div>
+    <div class="item">
+      <a href="#">
+        <div class="img">
+          <img src="./img/lesson-history03.jpg" alt="">
+        </div>
+        <div class="txt"><h3>蝴蝶書籤</h3></div>
+      </a>
+    </div>
+  </div>
+  <!-- <button id="prev">＜</button>
+  <button id="next">＞</button> -->
+</div>
+
+      </div>
+
+
+
+
+<script>
+  //🔶漢堡jQuery-start🔶
+$(function(){
+  // hamburger icon 的切換
+  $("button.hamburger").on("click", function(){
+    $(this).toggleClass("is-active");
+    $('.header .wrap').toggleClass('-open');
+  });
+});
+//🔶漢堡jQuery-end🔶
+</script>
+      <!-- <button class="totop" id="totop"><i class="fas fa-angle-up"></i></button> -->
+      <button class="totop" id="totop"><i class="fas fa-dove"></i></button>
+      <button class="openlist" id="openlist"><i class="fas fa-shopping-cart"></i></button>
+
+
+
+
+
+<div class="shoplist">
+  <button class="close">X</button>
+  <h2>購物清單</h2>
+  <div class="wrap">
+    <div class="item">
+      <img src="./img/shopitem12.jpg" alt="">
+      <div class="info">
+        <h3>【季節限定】綠蜥蜴耳環</h3>
+        <p>$790</p>  
+        <input type="number" min="0" value="1">
+      </div>
+      <button class="trash"><i class="fas fa-trash"></i></button>
+    </div>
+    <div class="item">
+      <img src="./img/shopitem10.jpg" alt="">
+      <div class="info">
+        <h3>鼠肩胛骨耳環</h3>
+        <p>$490</p>  
+        <input type="number" min="0" value="1">
+      </div>
+      <button class="trash"><i class="fas fa-trash"></i></button>
+    </div>
+    <div class="item">
+      <img src="./img/shopitem1-1.jpg" alt="">
+      <div class="info">
+        <h3>蛇骨手練</h3>
+        <p>$950</p>  
+        <input type="number" min="0" value="1">
+      </div>
+      
+      <button class="trash"><i class="fas fa-trash"></i></button>
+    </div>
+    <div class="item">
+      <img src="./img/shopitem8.jpg" alt="">
+      <div class="info">
+        <h3>青鳳蝶翅膀玻璃項鍊</h3>
+        <p>$890</p>  
+        <input type="number" min="0" value="1">
+      </div>
+      
+      <button class="trash"><i class="fas fa-trash"></i></button>
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+
+<div class="footer">
+  <div class="wrap">
+    
+    <div class="item item1">
+      <div class="list">
+        <ul>
+          <h4><a href="./shop.html">Shop</a></h4>
+          <li>
+            <a href="#">蛇骨手鍊</a>
+          </li>
+          <li>
+            <a href="#">十字項鍊</a>
+          </li>
+          <li>
+            <a href="#">小手項鍊</a>
+          </li>
+          <li>
+            <a href="#">斑鳩耳墜</a>
+          </li>
+          <li>
+            <a href="#">羚羊頭骨</a>
+          </li>
+        </ul>
+        <ul>
+          <h4><a href="./service.html">Service</a></h4>
+          <li>
+            <a href="#">骨骼漂白</a>
+          </li>
+          <li>
+            <a href="#">骨骼標本</a>
+          </li>
+          <li>
+            <a href="#">標本飾品</a>
+          </li>
+          <li>
+            <a href="#">剝製標本</a>
+          </li>
+          <li>
+            <a href="#">浸製標本</a>
+          </li>
+        </ul>
+        <ul>
+          <h4><a href="./lesson.html">Lesson</a></h4>
+          <li>
+            <a href="#">小鼠標本</a>
+          </li>
+          <li>
+            <a href="#">雛鳥剝製</a>
+          </li>
+          <li>
+            <a href="#">臼齒鍊墜</a>
+          </li>
+          <li>
+            <a href="#">南西淺談</a>
+          </li>
+          <li>
+            <a href="#">詹德川講座</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="item item2">
+      
+      <ul>
+        <h4><a href="#">Wonderland Studio綠野仙蹤標本工作室</a></h4>
+        <li>地　　址：臺北市大安區大安路一段101巷11號</li>
+        <li>營業時間：週二至週五 11:00 – 19:00</li>
+        <li>聯絡電話：02-2700-0898</li>
+        <div class="minitem">
+          <a href="#" class="fb">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="#" class="tw">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+        </div>
+      </ul>
+
+    </div>
+  </div>
+<div class="copyright">
+  © copyright 2020 Wonderland Studio.
+</div>
+    
+</body>
+</html>

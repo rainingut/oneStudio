@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Customize | Service | Wonderland Studio</title>
+    <!-- ico -->
+    <link rel="Shortcut Icon" type="image/x-icon" href="./img/ico.ico">
+    <!--  -->
+  <script src="https://kit.fontawesome.com/02749c2921.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- nav onclick -->
+  <script src="./js/navclick.js"></script>
+  <!-- 控制步驟詳情的檢視狀態 -->
+  <script src="./js/service.js"></script>
+  <style>
+    @import url(./css/footer.css);
+    @import url(./css/service.css);
+  </style>
+</head>
+<body>
+  <!-- 🔶漢堡start -->
+<button class="hamburger hamburger--spin" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+<!-- 🔶漢堡end -->
+  <div class="header">
+    <div class="wrap">
+    
+      <div class="nav">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./img/logo-white.svg" alt="logo">
+            <p>Wonderland<br>Studio</p>
+          </a>
+        </div>
+        <ul class="navlist">
+          <li><a href="./about.html">關於作坊</a></li>
+          <li class="ihavechildren"><a style="cursor:default;">作坊消息</a>
+            <ul class="smlist">
+              <li><a href="./blog.html">最新消息</a></li>
+              <li><a href="./blog-2.html">作品欣賞</a></li>
+            </ul>
+          </li>
+          <li class="ihavechildren"><a style="cursor:default;">作坊商品</a>
+            <ul class="smlist">
+              <li><a href="./shop.html">商品項目</a></li>
+              <li><a href="./shop-check.html">購物車</a></li>
+            </ul>
+          </li>
+          <li class="ihavechildren"><a style="cursor:default;" class="imhere">作坊服務</a>
+            <ul class="smlist">
+              <li><a href="./service.html" class="imhere">客製服務</a></li>
+              <li><a href="./shop.html">租借服務</a></li>
+            </ul>
+          </li>
+          <li><a href="./lesson.html">作坊課程</a>
+  
+          </li>
+          <li><a href="https://payment.ecpay.com.tw/Broadcaster/Donate/2A65836B17964030C7C2C83BFE801FA2" target="_blank">贊助作坊</a>
+  
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="txt">
+        <h1>作坊服務</h1>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="con">
+    <div class="wrap wrap1">
+      <h2>服務流程</h2>
+      <div class="prom">
+        <p>點擊步驟可以查看詳情。</p>
+        <button>Ｘ</button>
+      </div>
+      <div class="step">
+        
+        <div class="smst" data-target="svst1" data-page="1">
+          <a href="#svst1">
+            <h3>Step 1</h3>   
+            <div class="icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+              <div class="txt">
+              <h4>洽詢</h4>
+              <p>先傾聽您的需求</p>
+            </div>
+          </a>
+        </div>
+        <span><i class="fas fa-angle-right"></i></span>
+        <div class="smst" data-target="svst2" data-page="2">
+          <a href="#svst2">
+            <h3>Step 2</h3>   
+            <div class="icon">
+              <i class="fas fa-comment-dots"></i>
+            </div>
+            <div class="txt">
+              <h4>相談</h4>
+              <p>根據需求<br>
+              進行最適合的商品提案</p>
+            </div>
+          </a>
+        </div>
+        <span><i class="fas fa-angle-right"></i></span>
+        <div class="smst" data-target="svst3" data-page="3">
+          <a href="#svst3">
+            <h3>Step 3</h3>   
+            <div class="icon">
+              <i class="fas fa-copy"></i>
+            </div>
+            <div class="txt">
+              <h4>報價</h4>
+              <p>決定報價、配送條件<br>
+              及付款方式</p>
+            </div>
+          </a>
+        </div>
+        <span><i class="fas fa-angle-right" ></i></span>
+        <div class="smst" data-target="svst4" data-page="4">
+          <a href="#svst4">
+            <h3>Step 4</h3>   
+            <div class="icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="txt">
+              <h4>等待</h4>
+              <p>處理的時間會<br>依品項而有所不同</p>
+            </div>
+          </a>
+        </div>
+        <span><i class="fas fa-angle-right"></i></span>
+        <div class="smst" data-target="svst5" data-page="5">
+          <a href="#svst5">
+            <h3>Step 5</h3>   
+            <div class="icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <div class="txt">
+              <h4>付款與出貨</h4>
+              <p>將商品配送至指定場所</p>
+            </div>
+          </a>
+        </div>
+        
+        
+        
+      
+      </div>
+    
+      <!-- <div class="togglebtn">
+        <button id="listbtn">LIST</button>
+        <button id="windowbtn">WINDOW</button>
+      </div> -->
+    
+    </div>
+    
+    
+    <div class="wrap wrap2">
+      <div class="bgst">
+        <button class="windowbtncloss"><i class="fas fa-window-close"></i></button>
+        <button class="winsonbtnpre"><i class="fas fa-caret-square-left"></i></button>
+        <button class="winsonbtnnext"><i class="fas fa-caret-square-right"></i></button>
+      
+        <div class="smwrapper" data-page="0">
+          <div class="smst" id="svst1">
+            <div class="tit">
+              <h3>Step 1<br>洽詢<br><i class="fas fa-envelope"></i></h3>
+            </div>
+            <div class="txt">
+              <p>確認服務需求</br>
+              利用電話﹑E-mail告知以下事項。</br>
+              ．預算金額 ．呈現方式</br>
+              ．服務品項 ．交貨日期</br>
+              ．需求數量 ．出貨條件（配送地址﹑希望配送日等）</br>
+              告知以上事項後，會根據需求商品數量及出貨狀況確認。</br>
+              配送方式將由第三方物流公司進行配送。 查詢可配送地區。</p>
+            </div>
+          </div>
+            
+          <div class="smst" id="svst2">
+            <div class="tit">
+              <h3>Step 2<br>相談<br><i class="fas fa-comment-dots"></i></h3>
+            </div>
+            <div class="txt">
+              <p>根據顧客需求進行提案<br>
+              <p>進行物料及人力狀況確認後，將再提出適合的商品提案。</p>
+              <ul>
+                <li>諮詢服務時間：上班日週一至週五上午9時至12時；下午2時至5時。諮詢服務採網路預約諮詢時間，請於預約諮詢時間提前5-10分鐘先預約或填寫表單。</li>
+                <li>如逾預約諮詢時間5分鐘後未到場者，由候補者依序遞補。</li>
+                <li>請把握諮詢時間預先準備具體問題，能確實針對您的問題提出有效建議。</li>
+                <li>諮詢服務進行中請勿錄影、錄音及拍照。</li>
+                </ul>
+            </div>
+          </div>
+          
+          <div class="smst" id="svst3">
+            <div class="tit">
+              <h3>Step 3<br>報價<br><i class="fas fa-copy"></i></h3>
+            </div>
+            <div class="txt">
+              <p>選定商品後將會進行報價，並決定配送條件及匯款</p>
+                <h4><strong>關於付款-銀行匯款</strong></h4>
+                <ul>＜郵局匯款＞
+                  <li>匯款手續費須由顧客自行負擔。</li>
+                  <li>請匯款至以下指定帳戶，確認款項後將安排出貨。</li>
+                  <li>銀行代碼：007-1510 (ATM代碼007)</li>
+                  <li>銀行名：中華郵政</li>
+                  <li>分行名：大安分行</li>
+                  <li>銀行帳號：266-10-292125</li>
+                  <li>匯款戶名：綠野仙蹤標本工作室</li>
+                  <li>匯款手續費須由顧客自行負擔。</li>
+                </ul>
+                
+            </div>
+          </div>
+        
+          <div class="smst" id="svst4">
+            <div class="tit">
+              <h3>Step 4<br>耐心等候<br><i class="fas fa-clock"></i></h3>
+            </div>
+            <div class="txt">
+              <p>服務流程會依品項狀況、品項尺寸、氣候等因素，處理的時間會有所不同。</p>
+              <ul>
+                <li>缺貨屬於延遲發貨，建議保持和客服溝通，及時了解庫存情況，如果發現無貨本工作室將會於第一時間下架。</li>
+                <li>若物流原因導致，本工作室將提供有效的物流公章證明及發貨物流底單。</li>
+                <li>當商品檢查完成，將安排出貨的工作天數。</li>
+                </ul>
+                
+            </div>
+          </div>
+        
+          <div class="smst" id="svst5">
+            <div class="tit">
+              <h3>Step 5<br>付款與出貨<br><i class="fas fa-truck"></i></h3>
+            </div>
+            <div class="txt">
+              <p>付款確認後，將與您聯繫出貨事宜<br>
+              決定好商品後，將進行報價並確定配送條件。<br>
+              款項一經確認後，將安排備貨或訂貨，並與您確認出貨事宜。<br>
+              ※若有關於付款、配送相關問題，請洽綠野仙蹤客服。</p>
+              <h4><strong>關於配送</strong></h4>
+                <ul>＜配送日．附帶作業＞
+                  <li>進貨時的加工、包材回收、配送時間等，皆可討論。</li>
+                </ul>
+                <ul>＜配送費用＞
+                  <li>需另外進行運費報價。</li>
+                </ul>
+                <ul>＜配送相關＞
+                  <li>包含配送時間，包裝方式及進貨加工或包材回收等，皆可事先討論。</li>
+                  <li>※僅可承接本島之配送。查詢可配送地區。</li>
+                </ul>
+            </div>
+          </div>
+       </div>
+      </div>
+    </div>
+
+  
+
+
+    <div class="wrap wrap3">
+      <div class="sidtt">
+        <h2>服務項目</h2>
+      </div>  
+      <div class="example">
+        <div class="item">
+          <div class="img">
+            <img src="./img/service01img.jpg" alt="">
+          </div>
+          <div class="txt">
+            <h3>骨頭漂白</h3>
+            <p>蛻變潔白。重生將至<br>時間長度不固定 · 約NT$800以上不等</p>
+          </div>
+        </div>
+         <div class="item">
+          <div class="img">
+            <img src="./img/service02img.jpg" alt="">
+          </div>
+          <div class="txt">
+            <h3>骨骼標本</h3>
+            <p>原味骨頭 聯想千年遠古<br>時間長度不固定 · 約NT$3,000以上不等</p>
+          </div>
+        </div>
+         <div class="item">
+          <div class="img">
+            <img src="./img/service03img.jpg" alt="">
+          </div>
+          <div class="txt">
+            <h3>標本飾品</h3>
+            <p>不論何時。有你在<br>時間長度不固定 · NT$490起跳</p>
+          </div>
+        </div>
+         <div class="item">
+          <div class="img">
+            <img src="./img/service04img.jpg" alt="">
+          </div>
+          <div class="txt">
+            <h3>剝製標本</h3>
+            <p>如生前般 燦爛耀眼<br>時間長度不固定 · 約NT$3,000以上不等</p>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+      
+         
+    
+    <div class="wrap wrap4">
+      <div class="contact">
+        <h2>聯絡資訊</h2>
+        <p>
+          諮詢可透過下列連絡電話或Email。<br>
+          請將服務品項需求、預算、希望交貨日期等填寫後送出。<br>
+          聯絡電話：02-2762-8151 <br>
+          電子信箱：wonderlandstucio@email.com <br>
+          ※E-mail諮詢時，回信可能會耗費幾個工作日。
+          </p>
+      </div>
+    </div>
+  </div>  
+  
+    
+    <!-- <button class="totop" id="totop"><i class="fas fa-angle-up"></i></button> -->
+    <button class="totop" id="totop"><i class="fas fa-dove"></i></button>
+  <script>
+ 
+//🔶🔶🔶🔶🔶漢堡外掛jQuery-start🔶🔶🔶🔶🔶
+$(function(){
+  // hamburger icon 的切換
+  $("button.hamburger").on("click", function(){
+    $(this).toggleClass("is-active");
+    $('.header .wrap').toggleClass('-open');
+  });
+});
+//🔶🔶🔶🔶🔶漢堡外掛jQuery-end🔶🔶🔶🔶🔶
+</script>
+
+
+<div class="footer">
+  <div class="wrap">
+    
+    <div class="item item1">
+      <div class="list">
+        <ul>
+          <h4><a href="./shop.html">Shop</a></h4>
+          <li>
+            <a href="#">蛇骨手鍊</a>
+          </li>
+          <li>
+            <a href="#">十字項鍊</a>
+          </li>
+          <li>
+            <a href="#">小手項鍊</a>
+          </li>
+          <li>
+            <a href="#">斑鳩耳墜</a>
+          </li>
+          <li>
+            <a href="#">羚羊頭骨</a>
+          </li>
+        </ul>
+        <ul>
+          <h4><a href="./service.html">Service</a></h4>
+          <li>
+            <a href="#">骨骼漂白</a>
+          </li>
+          <li>
+            <a href="#">骨骼標本</a>
+          </li>
+          <li>
+            <a href="#">標本飾品</a>
+          </li>
+          <li>
+            <a href="#">剝製標本</a>
+          </li>
+          <li>
+            <a href="#">浸製標本</a>
+          </li>
+        </ul>
+        <ul>
+          <h4><a href="./lesson.html">Lesson</a></h4>
+          <li>
+            <a href="#">小鼠標本</a>
+          </li>
+          <li>
+            <a href="#">雛鳥剝製</a>
+          </li>
+          <li>
+            <a href="#">臼齒鍊墜</a>
+          </li>
+          <li>
+            <a href="#">南西淺談</a>
+          </li>
+          <li>
+            <a href="#">詹德川講座</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="item item2">
+      
+      <ul>
+        <h4><a href="#">Wonderland Studio綠野仙蹤標本工作室</a></h4>
+        <li>地　　址：臺北市大安區大安路一段101巷11號</li>
+        <li>營業時間：週二至週五 11:00 – 19:00</li>
+        <li>聯絡電話：02-2700-0898</li>
+        <div class="minitem">
+          <a href="#" class="fb">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="#" class="tw">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+        </div>
+      </ul>
+
+    </div>
+  </div>
+  <div class="copyright">
+    © copyright 2020 Wonderland Studio.
+  </div>
+</div>
+</body>
+</html>

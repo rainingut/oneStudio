@@ -1,0 +1,368 @@
+@import url('./footer.css');
+@import url('./nav.css');
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+header {
+    padding-top: 80px;
+    /* overflow:hidden; */
+}
+.banner{
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    top: 80px;
+    background: url(../img/lesson-banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 5s ease;
+    /* padding-top: 80px; */
+}
+.banner .txt{
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    transition: 2s ease;
+}
+.banner .txt:hover{
+    text-shadow: 3em 3em 5px #000;
+    background: rgba(0,0,0,0.5);
+}
+
+
+.con{
+    max-width: 960px;
+    margin: 0em auto 5em;
+    position: relative;
+    padding: 0 20px;
+}
+.con p{
+    opacity: 0.7;
+}
+.con .wrap1{
+    margin-top: -50px;
+}
+.con .wrap1 .item{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-radius: 5px;
+    background: linear-gradient(to top,#fb3,#663) ;/*(#663,#fb3*/
+    box-shadow: 0 0 10px black;
+    color: white;
+    position: relative;
+    padding: 20px;
+}
+/*時間點－大顆粒*/
+.con .wrap1 .item::after{
+    content: '';
+    position: absolute;
+    /* z-index: -1; */
+    bottom: -40px; left: 50%;
+    transform: translateX(-50%);
+    width: 80px;height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(transparent 50%,#fb3 0);
+}
+/*大顆粒的陰影*/
+.con .wrap1 .item::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    bottom: -43px; left: 50.3%;
+    transform: translateX(-50%);
+    width: 80px;height: 80px;
+    border-radius: 50%;
+    background: rgba(0,0,0,.5);
+    filter: blur(3px);
+}
+.con .wrap1 .img,
+.con .wrap1 .txt{
+    width: 50%;
+}
+.con .wrap1 .img{
+    margin-right: 0;
+    width: 400px;
+    height: 400px;
+    align-self: center;
+}
+.con .wrap1 .img img{
+    width: 100%;
+}
+.con .wrap1 .txt{
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+}
+.con .wrap1 .txt .btn{
+    align-self: flex-end;
+    position: relative;
+}
+.con .wrap1 .txt .btn a{
+    display: block;
+    background: linear-gradient(-45deg,transparent 10%,#663 0,#663 90%, transparent 0);
+    color: rgba(255, 255, 255,.5);
+    padding: 5px;
+    font-weight: 900;
+    position: relative;
+    z-index: 5;
+}
+.con .wrap1 .txt .btn::after{
+    content:'';
+    position: absolute;
+    display: inline-block;
+    left: .5em;     top:.8em;
+    width: 3em;    height: 2em;
+    z-index: 1;
+    background:linear-gradient(-45deg,transparent 10%,#000 0,#000 90%,transparent 0,transparent 100%) ;
+    filter: blur(5px) ;
+    opacity: .5;
+    -webkit-filter: blur(5px) ;
+  }
+
+
+
+
+.con .wrap2{
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;
+    padding-bottom: 70px;
+}
+/* 子子層有用float，用clear撐開 */
+.con .wrap2::after{
+    width: 100%;
+    height: 0;
+    clear:both;
+}
+.con .wrap2 .item{
+    width: 50%;
+}
+
+
+/*最長的那條時間線*/
+.con .wrap2 .item:nth-child(odd)::after{
+    content: '';
+    position: absolute;
+    top: 0;  right: 0;
+    z-index: -1;
+    width: 3px;  height: 90%;
+    background: #fb3;
+}
+.con .wrap2 .item:first-child::after{
+    top: -30%;
+    height: 150%;
+}
+/*float*/
+.con .wrap2 .item:nth-child(odd){
+    float: left;
+    padding-right: 30px;
+    position: relative;
+}
+.con .wrap2 .item:nth-child(even){
+    float: right;
+    padding-left: 30px;
+    transform:translateY(50%);
+}
+/*時間點*/
+.con .wrap2 .item::before{
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0;margin: auto;
+    transform: translateY(-25px);
+    width: 20px;  height: 20px;
+    border-radius: 50%;
+    background-color: #eb7;
+}
+.con .wrap2 .item:nth-child(odd)::before{
+    right: -8px;
+}
+.con .wrap2 .item:nth-child(even)::before{
+    left: -11px;
+}
+
+/*其他樣式*/
+.con .wrap2 a{
+    background-color: #eb7;
+    border-radius: 5px;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.con .wrap2 a:hover{
+    background: #663; 
+    color: white;
+}
+.con .wrap2 .item a .txt{
+    height: 120px;
+    overflow-y:scroll;
+}
+/*卷軸好醜不要出現*/
+.con .wrap2 .item a .txt::-webkit-scrollbar{
+    display: none;
+}
+/*時間線-短分支*/
+.con .wrap2 .item a::after{
+    content: '';   
+    position: absolute;
+    height: 3px;
+    width: 100px;
+    background-color: #eb7;
+    z-index: -2;
+}
+.con .wrap2 .item a:hover::after{
+    background-color: #663;
+}
+/*時間線-短分支*/
+.con .wrap2 .item:nth-child(odd) a::after{
+    right: 0;
+}
+.con .wrap2 .item:nth-child(even) a::after{
+    left: 0;
+}
+.con .wrap2 .item a .txt,
+.con .wrap2 .item a .img{
+    margin: 8px;   
+}
+.con .wrap2 .item a .img{
+    font-size: 0;
+}
+.con .wrap2 .item a img{
+    width: 150px;  height: 150px;
+    object-fit: cover;
+}
+/*float clear*/
+.con .ooxx{
+    width: 100%;
+    /* height: 150vh; */
+    position: relative;
+    z-index: -1;
+    /* background: green; */
+}
+
+
+@media screen and (max-width:1200px){
+    .banner{
+        top: initial;  
+    }
+}
+@media screen and (max-width:960px){
+    .con .wrap1 .item{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .con .wrap1 .item .img,
+    .con .wrap1 .item .txt{
+        width: 100%;
+    }
+    .con .wrap1 .item .img{
+        overflow: hidden;
+    }
+    .con .wrap1 .item .img img{
+        width: 100%; height: 100%;
+        object-fit: cover;
+        object-position: 50% 100%;
+    }
+    .con .wrap1 .item .txt{
+        padding: 25px;
+    }
+    .con .wrap2 .item a{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .con .wrap2 .item a .img{
+        width: 100%;
+    }
+    .con .wrap2 .item a .img img{
+        width: 100%; height: 150px;
+        object-fit: cover;
+    }
+    .con .wrap2 .item a .txt{
+        align-self: flex-start;
+    }
+    /*最長的時間線*/
+    .con .wrap2 .item:nth-child(odd)::after{
+        top: -15px;
+        height: 100%;
+    }
+}
+@media screen and (max-width:768px){
+    /*時間點－大顆粒*/
+    .con .wrap1 .item::after{
+        left:40px;
+        bottom: -35px;}
+    .con .wrap1 .item::before{
+        bottom: -38px; left: 40px;}
+    /*小卡片*/
+    .con .wrap2{
+        margin-left: 80px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .con .wrap2 .item:nth-child(odd),
+    .con .wrap2 .item:nth-child(even){
+        width: 100%;
+        float: none;
+        padding: 0;
+        transform: initial;
+    }
+    .con .wrap2 .item a .img,
+    .con .wrap2 .item a .txt{
+        width: 100%;
+    }
+    .con .wrap2 .item a .txt{
+        padding: 10px;
+        height: 120px;
+        overflow: auto;
+    }
+
+    /*最長的時間線*/
+    .con .wrap2 .item:nth-child(odd)::after{
+        left:-64px;
+        top:-50px;
+        height: 200%;
+    }
+    .con .wrap2 .item:nth-child(3)::after{/*最後一個微調*/
+        height: 156%;
+    }
+    /*時間點*/
+    .con .wrap2 .item:nth-child(odd)::before,
+    .con .wrap2 .item:nth-child(even)::before{
+        top: initial; bottom:initial;right: initial;left:initial;margin:initial;/*reset*/
+        left: -53px;
+        transform: translateY(9.4em);
+    }
+    .con .wrap2 .item:nth-child(odd)::before{
+        left:-73px
+    }
+    /*時間線-短分支*/
+    .con .wrap2 .item:nth-child(odd) a::after{
+        right:initial;
+        left:-4em;
+    }
+    .con .wrap2 .item:nth-child(even) a::after{
+        left:-2.5em;
+    }
+}

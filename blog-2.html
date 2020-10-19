@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artworks | Blog | Wonderland Studio</title>
+  <!-- ico -->
+  <link rel="Shortcut Icon" type="image/x-icon" href="./img/ico.ico">
+    <script src="https://kit.fontawesome.com/02749c2921.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- 以下是燈箱的連結 -->
+    <!-- jQuery v1.9.1 -->
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!-- lightgallery.js v1.6.6 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.6/css/lightgallery.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.6/js/lightgallery.min.js"></script>
+    <!-- nav onclick -->
+  <script src="./js/navclick.js"></script>
+    <style>
+      @import url(./css/blog-2.css);
+      .con{
+        padding-top: 100px;
+        padding-bottom: 5em;
+        width: 100%;
+        margin: auto;
+        display: flex;
+      }
+      .con .wrap{
+        max-width: 960px;
+        margin: auto;
+      }
+      .con .wrap #gallery{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .con .wrap #gallery img{
+        width:  200px; 
+        height: 200px;
+        object-fit:cover;
+      }
+      .con .wrap #gallery a{
+        position: relative;
+        display: block;
+        margin: 2px;
+        font-size: 0;
+        transition: .3s ease;
+      }
+      .con a:hover::before{
+        content: '';
+        position: absolute;
+        top: 0;left: 0;
+        width: 200px;
+        height:200px;
+        background-color: #000;
+        opacity: .6;
+      }
+    </style>
+    
+</head>
+<body>
+  <!-- 🔶漢堡start -->
+<button class="hamburger hamburger--spin" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+<!-- 🔶漢堡end -->
+    <div class="header">
+      <div class="wrap">
+    
+        <div class="nav">
+          <div class="logo">
+            <a href="./index.html">
+              <img src="./img/logo-white.svg" alt="logo">
+              <p>Wonderland<br>Studio</p>
+            </a>
+          </div>
+          <ul class="navlist">
+            <li><a href="./about.html">關於作坊</a></li>
+            <li class="ihavechildren"><a style="cursor:default;" class="imhere">作坊消息</a>
+              <ul class="smlist">
+                <li><a href="./blog.html">最新消息</a></li>
+                <li><a href="./blog-2.html" class="imhere">作品欣賞</a></li>
+              </ul>
+            </li>
+            <li class="ihavechildren"><a style="cursor:default;">作坊商品</a>
+              <ul class="smlist">
+                <li><a href="./shop.html">商品項目</a></li>
+                <li><a href="./shop-check.html">購物車</a></li>
+              </ul>
+            </li>
+            <li class="ihavechildren"><a style="cursor:default;">作坊服務</a>
+              <ul class="smlist">
+                <li><a href="./service.html">客製服務</a></li>
+                <li><a href="./shop.html">租借服務</a></li>
+              </ul>
+            </li>
+            <li><a href="./lesson.html">作坊課程</a>
+    
+            </li>
+            <li><a href="https://payment.ecpay.com.tw/Broadcaster/Donate/2A65836B17964030C7C2C83BFE801FA2" target="_blank">贊助作坊</a>
+    
+            </li>
+          </ul>
+        </div>
+      </div>
+        <div class="banner">
+          <div class="txt">
+            <h1>作坊消息</h1>
+          </div>
+
+          <div class="classbtn">
+            <div class="wrap0">
+              <form>
+                <a href="./blog.html">最新消息</a>
+                <a>作品欣賞</a>
+                <div class="search">
+                  <input type="search" value=""class="search">
+                  <button class="search"><i class="fa fa-search"></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+  
+      
+  <div class="con">
+    <div class="wrap">
+      <!-- 以下是燈箱 -->
+      <div id="gallery">
+        <a href="./img/gallery/001.jpg"><img src="./img/gallery/001.jpg"></a>
+        <a href="./img/gallery/002.jpg"><img src="./img/gallery/002.jpg"></a>
+        <a href="./img/gallery/003.jpg"><img src="./img/gallery/003.jpg"></a>
+        <a href="./img/gallery/004.jpg"><img src="./img/gallery/004.jpg"></a>
+        <a href="./img/gallery/005.jpg"><img src="./img/gallery/005.jpg"></a>
+        <a href="./img/gallery/006.jpg"><img src="./img/gallery/006.jpg"></a>
+        <a href="./img/gallery/007.jpg"><img src="./img/gallery/007.jpg"></a>
+        <a href="./img/gallery/008.jpg"><img src="./img/gallery/008.jpg"></a>
+        <a href="./img/gallery/009.jpg"><img src="./img/gallery/009.jpg"></a>
+        <a href="./img/gallery/010.jpg"><img src="./img/gallery/010.jpg"></a>
+        <a href="./img/gallery/011.jpg"><img src="./img/gallery/011.jpg"></a>
+        <a href="./img/gallery/012.jpg"><img src="./img/gallery/012.jpg"></a>
+        <a href="./img/gallery/013.jpg"><img src="./img/gallery/013.jpg"></a>
+        <a href="./img/gallery/014.jpg"><img src="./img/gallery/014.jpg"></a>
+        <a href="./img/gallery/015.jpg"><img src="./img/gallery/015.jpg"></a>
+        <a href="./img/gallery/016.jpg"><img src="./img/gallery/016.jpg"></a>
+        <a href="./img/gallery/017.jpg"><img src="./img/gallery/017.jpg"></a>
+        <a href="./img/gallery/018.jpg"><img src="./img/gallery/018.jpg"></a>
+        <a href="./img/gallery/019.jpg"><img src="./img/gallery/019.jpg"></a>
+        <a href="./img/gallery/020.jpg"><img src="./img/gallery/020.jpg"></a>
+        <a href="./img/gallery/021.jpg"><img src="./img/gallery/021.jpg"></a>
+        <a href="./img/gallery/022.jpg"><img src="./img/gallery/022.jpg"></a>
+        <a href="./img/gallery/023.jpg"><img src="./img/gallery/023.jpg"></a>
+        <a href="./img/gallery/024.jpg"><img src="./img/gallery/024.jpg"></a>
+        <a href="./img/gallery/025.jpg"><img src="./img/gallery/025.jpg"></a>
+        <a href="./img/gallery/026.jpg"><img src="./img/gallery/026.jpg"></a>
+        <a href="./img/gallery/027.jpg"><img src="./img/gallery/027.jpg"></a>
+        <a href="./img/gallery/028.jpg"><img src="./img/gallery/028.jpg"></a>
+        <a href="./img/gallery/029.jpg"><img src="./img/gallery/029.jpg"></a>
+        <a href="./img/gallery/030.jpg"><img src="./img/gallery/030.jpg"></a>
+        <a href="./img/gallery/031.jpg"><img src="./img/gallery/031.jpg"></a>
+        <a href="./img/gallery/032.jpg"><img src="./img/gallery/032.jpg"></a>
+        <a href="./img/gallery/033.jpg"><img src="./img/gallery/033.jpg"></a>
+        <a href="./img/gallery/034.jpg"><img src="./img/gallery/034.jpg"></a>
+        <a href="./img/gallery/035.jpg"><img src="./img/gallery/035.jpg"></a>
+        <a href="./img/gallery/036.jpg"><img src="./img/gallery/036.jpg"></a>
+        <a href="./img/gallery/037.jpg"><img src="./img/gallery/037.jpg"></a>
+        <a href="./img/gallery/038.jpg"><img src="./img/gallery/038.jpg"></a>
+        <a href="./img/gallery/039.jpg"><img src="./img/gallery/039.jpg"></a>
+        <a href="./img/gallery/040.jpg"><img src="./img/gallery/040.jpg"></a>
+        <a href="./img/gallery/041.jpg"><img src="./img/gallery/041.jpg"></a>
+        <a href="./img/gallery/042.jpg"><img src="./img/gallery/042.jpg"></a>
+        <a href="./img/gallery/043.jpg"><img src="./img/gallery/043.jpg"></a>
+        <a href="./img/gallery/044.jpg"><img src="./img/gallery/044.jpg"></a>
+        <a href="./img/gallery/045.jpg"><img src="./img/gallery/045.jpg"></a>
+        <a href="./img/gallery/046.jpg"><img src="./img/gallery/046.jpg"></a>
+        <a href="./img/gallery/047.jpg"><img src="./img/gallery/047.jpg"></a>
+        <a href="./img/gallery/048.jpg"><img src="./img/gallery/048.jpg"></a>
+        <a href="./img/gallery/049.jpg"><img src="./img/gallery/049.jpg"></a>
+        <a href="./img/gallery/050.jpg"><img src="./img/gallery/050.jpg"></a>
+        <a href="./img/gallery/051.jpg"><img src="./img/gallery/051.jpg"></a>
+        <a href="./img/gallery/052.jpg"><img src="./img/gallery/052.jpg"></a>
+        <a href="./img/gallery/053.jpg"><img src="./img/gallery/053.jpg"></a>
+        <a href="./img/gallery/054.jpg"><img src="./img/gallery/054.jpg"></a>
+        <a href="./img/gallery/055.jpg"><img src="./img/gallery/055.jpg"></a>
+        <a href="./img/gallery/056.jpg"><img src="./img/gallery/056.jpg"></a>
+        <a href="./img/gallery/057.jpg"><img src="./img/gallery/057.jpg"></a>
+        <a href="./img/gallery/058.jpg"><img src="./img/gallery/058.jpg"></a>
+        <a href="./img/gallery/059.jpg"><img src="./img/gallery/059.jpg"></a>
+        <a href="./img/gallery/060.jpg"><img src="./img/gallery/060.jpg"></a>
+        <a href="./img/gallery/061.jpg"><img src="./img/gallery/061.jpg"></a>
+        <a href="./img/gallery/062.jpg"><img src="./img/gallery/062.jpg"></a>
+        <a href="./img/gallery/063.jpg"><img src="./img/gallery/063.jpg"></a>
+        <a href="./img/gallery/064.jpg"><img src="./img/gallery/064.jpg"></a>
+        <a href="./img/gallery/065.jpg"><img src="./img/gallery/065.jpg"></a>
+        <a href="./img/gallery/066.jpg"><img src="./img/gallery/066.jpg"></a>
+        <a href="./img/gallery/067.jpg"><img src="./img/gallery/067.jpg"></a>
+        <a href="./img/gallery/068.jpg"><img src="./img/gallery/068.jpg"></a>
+        <a href="./img/gallery/069.jpg"><img src="./img/gallery/069.jpg"></a>
+        <a href="./img/gallery/070.jpg"><img src="./img/gallery/070.jpg"></a>
+        <a href="./img/gallery/071.jpg"><img src="./img/gallery/071.jpg"></a>
+        <a href="./img/gallery/072.jpg"><img src="./img/gallery/072.jpg"></a>
+        <a href="./img/gallery/073.jpg"><img src="./img/gallery/073.jpg"></a>
+        <a href="./img/gallery/074.jpg"><img src="./img/gallery/074.jpg"></a>
+        <a href="./img/gallery/075.jpg"><img src="./img/gallery/075.jpg"></a>
+        <a href="./img/gallery/076.jpg"><img src="./img/gallery/076.jpg"></a>
+        <a href="./img/gallery/077.jpg"><img src="./img/gallery/077.jpg"></a>
+        <a href="./img/gallery/078.jpg"><img src="./img/gallery/078.jpg"></a>
+        <a href="./img/gallery/079.jpg"><img src="./img/gallery/079.jpg"></a>
+        <a href="./img/gallery/080.jpg"><img src="./img/gallery/080.jpg"></a>
+        <a href="./img/gallery/081.jpg"><img src="./img/gallery/081.jpg"></a>
+        <a href="./img/gallery/082.jpg"><img src="./img/gallery/082.jpg"></a>
+        <a href="./img/gallery/083.jpg"><img src="./img/gallery/083.jpg"></a>
+        <a href="./img/gallery/084.jpg"><img src="./img/gallery/084.jpg"></a>
+        <a href="./img/gallery/085.jpg"><img src="./img/gallery/085.jpg"></a>
+        <a href="./img/gallery/086.jpg"><img src="./img/gallery/086.jpg"></a>
+
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+      <!-- <button class="totop" id="totop"><i class="fas fa-angle-up"></i></button> -->
+      <button class="totop" id="totop"><i class="fas fa-dove"></i></button>
+      <!-- JQuery - totop -->
+<script>
+
+  $(function(){
+  $( "#gallery" ).lightGallery(); 
+  //  以上是燈箱 
+  $("#totop").on("click", function(e){// 點擊按鈕，頁面滑到最上方
+    e.preventDefault();
+    $('html, body').animate({scrollTop: 0},750);
+  });
+});
+//🔶漢堡jQuery-start
+$(function(){
+  // hamburger icon 的切換
+  $("button.hamburger").on("click", function(){
+    $(this).toggleClass("is-active");
+    $('.header .wrap').toggleClass('-open');
+  });
+});
+//🔶漢堡jQuery-end
+</script>
+
+
+      <div class="footer">
+        <div class="wrap">
+          
+          <div class="item item1">
+            <div class="list">
+              <ul>
+                <h4><a href="./shop.html">Shop</a></h4>
+                <li>
+                  <a href="#">蛇骨手鍊</a>
+                </li>
+                <li>
+                  <a href="#">十字項鍊</a>
+                </li>
+                <li>
+                  <a href="#">小手項鍊</a>
+                </li>
+                <li>
+                  <a href="#">斑鳩耳墜</a>
+                </li>
+                <li>
+                  <a href="#">羚羊頭骨</a>
+                </li>
+              </ul>
+              <ul>
+                <h4><a href="./service.html">Service</a></h4>
+                <li>
+                  <a href="#">骨骼漂白</a>
+                </li>
+                <li>
+                  <a href="#">骨骼標本</a>
+                </li>
+                <li>
+                  <a href="#">標本飾品</a>
+                </li>
+                <li>
+                  <a href="#">剝製標本</a>
+                </li>
+                <li>
+                  <a href="#">浸製標本</a>
+                </li>
+              </ul>
+              <ul>
+                <h4><a href="./lesson.html">Lesson</a></h4>
+                <li>
+                  <a href="#">小鼠標本</a>
+                </li>
+                <li>
+                  <a href="#">雛鳥剝製</a>
+                </li>
+                <li>
+                  <a href="#">臼齒鍊墜</a>
+                </li>
+                <li>
+                  <a href="#">南西淺談</a>
+                </li>
+                <li>
+                  <a href="#">詹德川講座</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="item item2">
+            
+            <ul>
+              <h4><a href="#">Wonderland Studio綠野仙蹤標本工作室</a></h4>
+              <li>地　　址：臺北市大安區大安路一段101巷11號</li>
+              <li>營業時間：週二至週五 11:00 – 19:00</li>
+              <li>聯絡電話：02-2700-0898</li>
+              <div class="minitem">
+                <a href="#" class="fb">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="#" class="tw">
+                  <i class="fab fa-twitter-square"></i>
+                </a>
+              </div>
+            </ul>
+      
+          </div>
+        </div>
+      <div class="copyright">
+        © copyright 2020 Wonderland Studio.
+      </div>
+
+
+
+
+
+
+
+</body>
+</html>

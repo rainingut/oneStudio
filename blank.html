@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            color: black;
+        }
+        :root{
+          --header-height:60px;
+          --aside-width:240px
+        }
+        img{
+          max-width: 100%;
+        }
+        header.header{
+          border: 5px solid blue;
+          height: var(--header-height);
+        }
+        header.header .btn{
+          display: none;
+        }
+        /* 🔶🔶🔶🔶🔶aside區🔶🔶🔶🔶🔶 */
+        aside.aside{
+            overflow-y: scroll;
+            width: var(--aside-width);
+            border: 5px solid green;
+            height: calc(100vh - var(--header-height));
+            position: fixed;
+            background-color: rgb(218, 218, 218);
+        }
+        /* 🔶🔶🔶🔶🔶main區🔶🔶🔶🔶🔶 */
+        main.main{
+          background-color: #efefef;
+          border: 5px solid tomato;
+          margin-left: var(--aside-width);
+          width: calc(100% - var(--aside-width));
+          height: calc(100vh - var(--header-height));
+          overflow-y: scroll;
+          font-size: 0;
+        }
+        main.main div.wrap{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          width: 100%;
+          height: (100vh - var(--header-height));
+          border: 3px solid yellowgreen;
+        }
+        main.main div.wrap a.item{
+          display: inline-block;
+          width: calc( (100% - 60px) / 4);
+          height: (100vh - var(--header-height));
+          border: 1px solid #000;
+          margin: 0 20px 20px 0;
+        }
+        main.main div.wrap a.item:nth-child(4n){
+          margin-right: 0;
+        }
+        main.main div.wrap a.item div.txt p{
+          font-size: 16px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      /*🟡🟡🟡🟡🟡media區🟡🟡🟡🟡🟡*/
+      @media screen and (max-width: 767px){
+        header.header .btn{
+          display: block;
+        }
+        /* 🔶🔶🔶🔶🔶aside區🔶🔶🔶🔶🔶 */
+          aside.aside{
+            transform: translateX(-100%);
+            transition: .3s ease;
+          }
+          aside.aside.-on{
+            transform: translateX(0);
+          }
+        /* 🔶🔶🔶🔶🔶main區🔶🔶🔶🔶🔶 */
+          main.main{
+            width: 100%;
+            margin-left:0;
+          }
+          main.main div.wrap a.item{
+          display: inline-block;
+          width: calc( (100% - 20px) / 2);
+          height: (100vh - var(--header-height));
+          border: 1px solid #000;
+          margin: 0 20px 20px 0;
+          }
+          main.main div.wrap a.item:nth-child(2n){
+            margin-right: 0;
+          }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+      me.header <br>
+      <button class="btn" id="togglebtn">
+        Show Now
+      </button>
+    </header>
+    <aside class="aside">
+      me.aside
+      <ul class="asidelink">
+        <li><a href="">link1</a></li>
+        <li><a href="">link2</a></li>
+        <li><a href="">link3</a></li>
+        <li><a href="">link4</a></li>
+        <li><a href="">link5</a></li>
+        <li><a href="">link6</a></li>
+        <li><a href="">link7</a></li>
+        <li><a href="">link8</a></li>
+        <li><a href="">link9</a></li>
+        <li><a href="">link10</a></li>
+        <li><a href="">link11</a></li>
+        <li><a href="">link12</a></li>
+        <li><a href="">link13</a></li>
+        <li><a href="">link14</a></li>
+        <li><a href="">link15</a></li>
+        <li><a href="">link16</a></li>
+        <li><a href="">link17</a></li>
+        <li><a href="">link18</a></li>
+        <li><a href="">link19</a></li>
+        <li><a href="">link20</a></li>
+        <li><a href="">link21</a></li>
+        <li><a href="">link22</a></li>
+        <li><a href="">link23</a></li>
+        <li><a href="">link24</a></li>
+        <li><a href="">link25</a></li>
+        <li><a href="">link26</a></li>
+        <li><a href="">link27</a></li>
+        <li><a href="">link28</a></li>
+        <li><a href="">link29</a></li>
+        <li><a href="">link30</a></li>
+        <li><a href="">link31</a></li>
+        <li><a href="">link32</a></li>
+        <li><a href="">link33</a></li>
+        <li><a href="">link34</a></li>
+        <li><a href="">link35</a></li>
+        <li><a href="">link36</a></li>
+        <li><a href="">link37</a></li>
+        <li><a href="">link38</a></li>
+        <li><a href="">link39</a></li>
+        <li><a href="">link40</a></li>
+        <li><a href="">link41</a></li>
+        <li><a href="">link42</a></li>
+        <li><a href="">link43</a></li>
+        <li><a href="">link44</a></li>
+        <li><a href="">link45</a></li>
+        <li><a href="">link46</a></li>
+        <li><a href="">link47</a></li>
+        <li><a href="">link48</a></li>
+        <li><a href="">link49</a></li>
+        <li><a href="">link50</a></li>
+      </ul>
+    </aside>
+    <main class="main">
+      <div class="wrap">
+        <a href="" class="item">
+          <div class="img"><img src="https://picsum.photos/400/300/"></div>
+          <div class="txt">
+            <p>Lorem, ipsum dolor.</p>
+          </div>
+        </a>
+        <a href="" class="item">
+          <div class="img"><img src="https://picsum.photos/400/300/"></div>
+          <div class="txt">
+            <p>Lorem, ipsum dolor.</p>
+          </div>
+        </a>
+        <a href="" class="item">
+          <div class="img"><img src="https://picsum.photos/400/300/"></div>
+          <div class="txt">
+            <p>Lorem, ipsum dolor.</p>
+          </div>
+        </a>
+        <a href="" class="item">
+          <div class="img"><img src="https://picsum.photos/400/300/"></div>
+          <div class="txt">
+            <p>Lorem, ipsum dolor.</p>
+          </div>
+        </a>
+        <a href="" class="item">
+          <div class="img"><img src="https://picsum.photos/400/300/"></div>
+          <div class="txt">
+            <p>Lorem, ipsum dolor.</p>
+          </div>
+        </a>
+        <a href="" class="item">
+          <div class="img"><img src="https://picsum.photos/400/300/"></div>
+          <div class="txt">
+            <p>Lorem, ipsum dolor.</p>
+          </div>
+        </a>
+        <a href="" class="item">
+          <div class="img"><img src="https://picsum.photos/400/300/"></div>
+          <div class="txt">
+            <p>Lorem, ipsum dolor.</p>
+          </div>
+        </a>
+        <a href="" class="item">
+          <div class="img"><img src="https://picsum.photos/400/300/"></div>
+          <div class="txt">
+            <p>Lorem, ipsum dolor.</p>
+          </div>
+        </a>
+        <a href="" class="item">
+          <div class="img"><img src="https://picsum.photos/400/300/"></div>
+          <div class="txt">
+            <p>Lorem, ipsum dolor.</p>
+          </div>
+        </a>
+      </div>  
+    </main>
+    <script>
+
+    // 🔶按鈕開關側邊欄
+    $(function(){
+
+        $('button.btn').on('click',function(){
+          $('aside.aside').toggleClass('-on');
+        })
+    });
+    // 🔶(微調)當<=767px，打開側邊欄；aside會自動縮合
+    $(window).on("resize", function(){
+      var wdth=$(window).width();
+      if(wdth <= 767){
+        console.log("a");
+        $('aside.aside').removeClass('-on');
+      };
+    });
+
+    </script>
+</body>
+</html>
